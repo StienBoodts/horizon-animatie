@@ -24,7 +24,7 @@
                 <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   <a class="nav-link" href="activities.html">Activities</a>
-                  <a class="nav-link" href="itinerary.html">itinerary</a>
+                  <a class="nav-link" href="itinerary.html">Itinerary</a>
                 </div>
               </div>
               <span class="navbar-text d-none d-sm-none d-md-none d-lg-block ">
@@ -36,13 +36,13 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col">
-                </div>
-                <div class="col-4">
+                <div class="col-6">
                     <h2>Your Itinerary:</h2>
                         <div class="selection-list"></div>
                 </div>
+                <div class="col-1"></div>
                 <div class="col-4">
+                    <h2>Your Details:</h2>
                     <form method="POST" class="contact-form">
                         <div class="row">
                             <label for="name" class="col-4">Name:</label>
@@ -61,7 +61,7 @@
                             <input type="email" id="email" name="email" class="col-8">
                         </div>
                         <div class="row">
-                            <label for="start-date" class="col-4">Date:</label>
+                            <label for="start-date" class="col-4">Dates:</label>
                             <input type="date" id="start-date" name="start-date" class="col-3">
                             <label for="end-date" class="col-1">to</label>
                             <input type="date" id="end-date" name="end-date" class="col-3">
@@ -72,11 +72,10 @@
                             <textarea id="message" name="message" rows="10" cols="30" placeholder="Write your message here..." class="col-12"></textarea>
                         </div>
                         <div class="row">
-                            <input type="submit" value="submit" class="btn btn-yellow btn-form">
+                            <input type="submit" class="btn btn-yellow btn-form" value="Get A Quote!">
                         </div>
+                        <div class="col-1"></div>
                     </form>
-                </div>
-                <div class="col">
                 </div>
             </div>
         </div>
