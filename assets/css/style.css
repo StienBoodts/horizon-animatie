@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+/* --------------------------------------- General Styling */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h2 {
+    color:#F55B2E;
+    font-size: 2.5em;
+    margin: 5%;
+    font-family: 'Satisfy', cursive;
+}
+
+/* ---------------------------------------  navbar */
+
+.navbar-custom {
+    background-color: #fff;
+}
+
+.navbar-custom .navbar-text {
+    color: #CD2244;
+    font-size: 1.5em;
+    font-family: 'Satisfy', cursive;
+    margin-right: 5%;
+}
+
+.logo {
+    height: 70px;
+    margin-right: 10%;
+}
+
+.navbar a {
+    color: #16B7B2;
+    font-size: 1.5em;
+    margin-left: 5%;
+}
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ---------------------------------------  frontpage */
+
+.image-container {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#introduction {
+    font-size: 1.3em;
+    margin: 5%;
+}
+
+.btn-yellow {
+    background-color: #FDA31B;
+    color: black;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.btn-yellow:hover {
+    background-color: #F55B2E;
+    color: #black;
+}
+
+
+
+
+
+/* ---------------------------------------  footer */
+
+footer {
+    margin-top: 10px;
+}
