@@ -12,14 +12,25 @@ body {
 h2 {
     color:#F55B2E;
     font-size: 2.5em;
-    margin: 5%;
+    text-align: center;
+    margin-bottom: 5%;
     font-family: 'Satisfy', cursive;
+}
+
+.main-container {
+    min-height: 100%;
+    margin-bottom: 20px;
+}
+
+.inline-block {
+    display: inline-block;
 }
 
 /* ---------------------------------------  navbar */
 
 .navbar-custom {
     background-color: #fff;
+    margin-top: 10px;
 }
 
 .navbar-custom .navbar-text {
@@ -69,12 +80,23 @@ h2 {
     color: #black;
 }
 
-
-
-
-
 /* ---------------------------------------  footer */
 
 footer {
+    margin-top: 20px;
+    background-color: #16B7B2;
+    color: #fff;
+}
+
+.footer-col {
     margin-top: 10px;
+}
+
+footer a {
+    color:#CD2244;
+    font-size: 1em;
+}
+
+footer a:hover {
+    color:#F55B2E;
 }
