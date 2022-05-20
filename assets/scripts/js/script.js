@@ -37,33 +37,38 @@ function initMap() {
     });
 
     horizonMarker.addListener("click", () => {
-    document.getElementById("activity-info").innerHTML = `
+    document.getElementById("activityInfo").innerHTML = `
     <h3>You are staying here!</h3>`;
     });
 
     seaLifeMarker.addListener("click", () => {
-      document.getElementById("activity-info").innerHTML = `
+      document.getElementById("activityInfo").innerHTML = `
       <h3>Sea Life</h3>
       <p>Discover the magic of the underwater world.
       Come face to face with wildlife and learn all about how we can help ocean conservation.<br>
       Opening Hours: 10:00 - 17:00<br>
-      Price: €15/person</p>`;
-      });
-
+      Price: €15/person</p>`
+    });
 
   }
   
 window.initMap = initMap;
 
-let activityInfo = getElementById("activity-info").innerHTML;
+// get activityInfo and add it onto the selection list
 
-let addToItinerary = getElementById("addToItinerary");
+$(document).ready(function() {
+  $("#addToItinerary").on("click", function() {
+    $("#selection").append($("#activityInfo").html());
+  });
+});
 
-let itinerary = [];
+// add selection list to intinerary to get quote
 
-addToItinerary.addListener('click', function() {
-  itinerary.push(activityInfo);
-})
-
+$(document).ready(function() {
+  $("#quoteMe").on("click", function() {
+    var $selection = $("#selection").clone();
+    $("#itinerary").html($selection);
+  });
+});
 
 

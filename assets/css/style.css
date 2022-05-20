@@ -13,6 +13,7 @@ h2 {
     color:#F55B2E;
     font-size: 2.5em;
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 5%;
     font-family: 'Satisfy', cursive;
 }
@@ -24,6 +25,10 @@ h2 {
 
 .inline-block {
     display: inline-block;
+}
+
+p {
+    margin-top: 20px;
 }
 
 /* ---------------------------------------  navbar */
@@ -80,7 +85,7 @@ h2 {
     color: #black;
 }
 
-/* ---------------------------------------  form */
+/* ---------------------------------------  Map */
 
 #map {
     height: 400px;
@@ -88,6 +93,10 @@ h2 {
 }
 
 /* ---------------------------------------  form */
+
+.contactForm {
+    background-color:#FDA31B;
+}
 
 input, label {
     margin: .4rem 0;
