@@ -25,7 +25,6 @@ function initMap() {
         map: map,
     });
 
-
     const horizonEducatiefMarker = new google.maps.Marker({
         position: horizonEducatief,
         map: map,
@@ -37,8 +36,7 @@ function initMap() {
     });
 
     horizonMarker.addListener("click", () => {
-    document.getElementById("activityInfo").innerHTML = `
-    <h3>You are staying here!</h3>`;
+    alert("You are staying here!");
     });
 
     seaLifeMarker.addListener("click", () => {
@@ -50,6 +48,24 @@ function initMap() {
       Price: €15/person</p>`
     });
 
+    horizonEducatiefMarker.addListener("click", () => {
+      document.getElementById("activityInfo").innerHTML = `
+      <h3>Horizon Educatief</h3>
+      <p>Choose from a wide range of educational and artistic guided activities.<br>
+      From exploring the dunes, learning all about plankton to meeting Pirate Pete.<br>
+      Opening Hours: 10:00 - 17:00<br>
+      Price: Depends on activity.</p>`
+    });
+
+    hangTimeMarker.addListener("click", () => {
+      document.getElementById("activityInfo").innerHTML = `
+      <h3>Hangtime</h3>
+      <p>The best trampoline park around!<br>
+      Hangtime also has an amazing wooden indoor play area!<br>
+      Opening Hours: 10:00 - 17:00<br>
+      Price: £8/person</p>`
+    });
+
   }
   
 window.initMap = initMap;
@@ -58,8 +74,8 @@ window.initMap = initMap;
 
 $(document).ready(function() {
   $("#addToItinerary").on("click", function() {
-    $("#selection").append($("#activityInfo").html());
-  });
+      $("#selection").append($("#activityInfo").html());
+    });
 });
 
 // add selection list to intinerary to get quote
@@ -70,5 +86,8 @@ $(document).ready(function() {
     $("#itinerary").html($selection);
   });
 });
+
+
+
 
 
