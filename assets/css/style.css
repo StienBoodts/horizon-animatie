@@ -10,7 +10,7 @@ body {
 
 
 h2 {
-    color:#F55B2E;
+    color:#CD2244;
     font-size: 2.5em;
     text-align: center;
     margin-top: 20px;
@@ -81,17 +81,34 @@ p {
 }
 
 .btn-yellow:hover {
-    background-color: #F55B2E;
+    background-color: #CD2244;
     color: #black;
 }
 
+#introcol {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 /* ---------------------------------------  Map */
+
+#mapinstructions {
+    text-align: center;
+    size: 1em;
+    text-decoration: underline;
+}
 
 #map {
     height: 400px;
     width: 100%;
 }
 
+/* ---------------------------------------  Selection */
+
+.selection-block {
+    background-color: #16B7B2;
+}
+ 
 /* ---------------------------------------  form */
 
 .contactform {
@@ -115,6 +132,14 @@ input:hover, textarea:hover {
 
 .btn-form {
     margin-top: 20px;
+    background-color: #16B7B2;
+    color: black;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.btn-form:hover {
+    background-color: #CD2244;
 }
 
 /* ---------------------------------------  footer */

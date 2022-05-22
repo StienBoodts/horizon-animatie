@@ -25,7 +25,6 @@
                 <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   <a class="nav-link" href="activities.html">Activities</a>
-                  <a class="nav-link" href="#selection">Itinerary</a>
                 </div>
               </div>
               <span class="navbar-text d-none d-sm-none d-md-none d-lg-block ">
@@ -38,13 +37,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-8">
-                    <div><p>Click the places on the map to find out more:</p></div>
+                    <div id="mapinstructions"><p>Click the places on the map to find out more:</p></div>
                     <div id="map">map</div>
                     <h2>Activity Info:</h2>
                     <div id="activityInfo"></div>
                     <input type="button" value="Add to Itinerary" class="btn btn-yellow" id="addToItinerary">
                 </div>
-                <div class="col-sm-4 d-none d-sm-block">
+                <div class="col-sm-4 d-none d-sm-block selection-block">
                     <h2>Your selection:</h2>
                     <div id="selection"></div>
                     <a href="#contact" class="btn btn-yellow" id="quoteMe">Quote Me</a>
@@ -83,7 +82,7 @@
                         </div>
                             <input type="hidden" id="selectioninform" name="selectioninform"/>
                         <div class="row">
-                            <input type="submit" class="btn btn-yellow btn-form" value="Get A Quote!" id="sendquoterequest">
+                            <input type="submit" class="btn btn-form" value="Get A Quote!" id="sendquoterequest">
                         </div>
                         <div class="col-1"></div>
                     </form>
