@@ -1,4 +1,3 @@
-
 // Showing map and pins - Google tutorial
 let map;
 
@@ -77,8 +76,7 @@ function initMap() {
         Tropical indoor pool for all ages.<br>
         Opening Hours: 10:00 - 18:00<br>
         Price: £8/person</p>`
-      },
-      
+      }, 
     ];
 
     // loop over coordinates and add them onto map
@@ -106,8 +104,7 @@ function initMap() {
     horizonMarker.addListener("click", () => {
     alert("You are staying here!");
     });
-
-  }
+}
   
 window.initMap = initMap;
 

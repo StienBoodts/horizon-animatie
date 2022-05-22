@@ -1,108 +1,189 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Horizon Activity Booking Website
 
-Welcome StienBoodts,
+This website offers visitors an overview of possible activities in the area of a holiday accomodation provider (Horizon).
+An online place where visitors can browse activities based on location on a map, get more info and request a quote from the provider.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<img src="assets/images/screenshot.png" width="500"/><br>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
+## User Experience
 ---
 
-Happy coding!
+### _User Stories_
+
+- #### **First Time Visitor Goals:**
+1. As a first time user, I want to find out the purpose of the website immediately.
+2. As a first time user, I want to find clear navigation to all parts of the website.
+3. As a first time user, I want to find out what activities are available.
+
+- #### **Returning Visitor Goals:**
+1. As a returning user, I want to find out how I can book the activities.
+2. As a returning user, I want to find out how to get in touch if I have further questions.
+
+- #### **Frequent User Goals:**
+1. As a frequent user, I want to find out if there are any new activities.
+
+### _Design_
+
+- #### **Colour Scheme**
+
+    <img src="assets/images/colorscheme.png" width="500"/><br>
+    Colour scheme based on Horizon logo. It has been tested to be accessible to color blind users. Made with [Adobe Color](https://color.adobe.com/).
+
+- #### **Typography**
+
+    <strong>Headings:</strong> Satisfy, [Google Fonts](https://fonts.google.com/). A bit playful and fun to match the fun activities.<br>
+    <strong>Main font:</strong> Roboto, [Google Fonts](https://fonts.google.com/). Clear, legible without being too formal looking.
+
+- #### **Wireframes**
+
+    <img src="assets/images/wireframe.png" width="500"/><br>
+
+    Wireframes for homepage and activities page.
+    Made with [Balsamiq](https://balsamiq.com/).
+
+    During the developing process a few changes were made to the lay-out to improve user experience and javascript coding.
+
+## Features
+---
+
+### _Existing Features_
+
+- __Interactive Google Map__
+
+    Users can select activities based on locations on a Google Map.
+    They simply have to click on the marker to get more info.
+    The user can decide to add them to their selection.
+    They can also choose to start over if they made a wrong selection.
+
+- __Quote Request Form__
+
+    After the user has made a selection of activities, they can request a quote.
+    The form will collect important information for the site owner who needs to book the activities.
+    The form also collects the user's selection in a hidden input field.
+    All the information from the form will be emailed to the site owner when the 'Get A Quote' button is clicked.
+
+
+### _Features Left To Implement_
+
+- __New Activities__
+
+    A way of showing which activity has been added recently
+
+- __Home Icon__
+
+    Instead of a marker, Horizon's own location could be marked with a little icon (a house or logo).
+
+## Technologies Used
+---
+
+### _Languages Used_
+
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+-   [jQuery](https://en.wikipedia.org/wiki/JQuery)
+
+### _Frameworks, Libraries & Programs Used_
+
+1. [Google Cloud Platform](https://console.cloud.google.com/)
+1. [Google Maps Javascript API](https://console.cloud.google.com/)
+1. [EmailJS](https://www.emailjs.com)
+    - Sending form data to email address
+1. [Bootstrap:](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+    - Bootstrap was used on parts of the website to make them responsive.
+1. [Adobe Color:](https://color.adobe.com/)
+    - Adobe Color was used to select the colour scheme and test its accessibility.
+1. [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the wireframes during the design process.
+1. [Gitpod:](https://gitpod.io/workspaces)
+    - Gitpod workspaces was used to create and edit code and push them onto the Github repo.
+1. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from the Gitpod.
+1. [Hover.css:](https://ianlunn.github.io/Hover/)
+    - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts was used to import the 'Montserrat' and 'Nothing You Could Do' (logo) fonts into the style.css file which are used on all pages.
+
+## Testing 
+---
+
+- [HTML](https://jigsaw.w3.org/css-validator/#validate_by_input)
+- [CSS](https://jigsaw.w3.org/css-validator/validator)
+- [JSLint](https://www.jslint.com/)
+
+### _Validator Testing_
+
+- #### **HTML**
+
+    - Error: stray tags
+
+- #### **CSS**
+
+    - Error: black is not hex code (changed)
+    - type: javascript is unnecessary in script tag (kept)
+
+- #### **JSLint**
+
+    - Several warnings regarding order of properties, but kept for code readability.
+    - Unexpected trailing spaces
+    - Warning of unexpected for and let in for loop coding.
+
+### _Testing User Stories from User Experience (UX) Section_
+
+- #### **First Time Visitor Goals:**
+1. As a first time user, I want to find out the purpose of the website immediately.
+    - The logo, hero image and text clearly state the purpose on home page.
+2. As a first time user, I want to find clear navigation to all parts of the website.
+    - The navigation is clear, simple and immediately visible on top of the page, there is no distraction by background.
+3. As a first time user, I want to find out what activities are available.
+    - Only one click needed to get to activity overview on map.
+
+- #### **Returning Visitor Goals:**
+1. As a returning user,  I want to find out how I can book the activities.
+    - Once on activity page, the call to action buttons are clearly visible.
+2. As a returning user, I want to find out how to get in touch if I have further questions.
+    - As well as the form on the activity quote page, the contact details are in the footer of the website.
+
+- #### **Frequent User Goals:**
+1. As a frequent user, I want to find out if there are any new activities.
+    - Markers could change colour if they are new (still to implement).
+
+## Deployment
+---
+This project was developed on Gitpod, committed to Git and pushed onto the [Github repository](https://github.com/StienBoodts/horizon-animatie-CI-MP2) using Bash. 
+
+To deploy the website from the repository onto Github Pages the following steps were taken:
+
+1. log into Github
+2. from the list of repositories, choose **StienBoodts/horizon-animatie-CI-MP2**.
+3. Navigate to **Settings** at the top of the repository.
+4. Choose **Pages** from the menu on the left of the page.
+5. In the Source Section, select **Branch: main** in the drop down menu.
+6. Leave **/(root)** selected in the next drop down menu.
+7. Press **Save**
+8. The page will refresh and the **link to the deployed website** will appear at the top.
+
+## Credits & Resources
+---
+
+### _Content_ 
+
+1. [Developers.google.com](https://developers.google.com/maps/documentation/javascript/overview)
+    - Google Maps Javascript API documentation
+1. [EmailJS](https://www.emailjs.com)
+    - Tutorials to set new parameters
+1. [Code Institute](https://codeinstitute.net/)
+    - general info and practice of HTML, CSS & UX lessons and mini projects taken as reference for the creation of this website.
+1. [https://stackoverflow.com/](https://stackoverflow.com/)
+    - General searches to solve issues
+1. [MDN Web Docs](https://developer.mozilla.org/)
+    - Gnereal Reference
+1. [Github Docs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+    - Github Markdown Cheat Sheet
+
+### _Media_
+
+
+1. [Unsplash](https://unsplash.com/photos/KjFBdofUjco)
+    - Front Page hero image
+

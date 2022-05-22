@@ -87,7 +87,7 @@ p {
 
 .btn-yellow:hover {
     background-color: #CD2244;
-    color: #black;
+    color: #000000;
 }
 
 .btn-refresh {
@@ -114,7 +114,7 @@ p {
 
 #mapinstructions {
     text-align: center;
-    size: 1em;
+    font-size: 1em;
     text-decoration: underline;
 }
 
@@ -184,5 +184,3 @@ footer a {
 footer a:hover {
     color:#F55B2E;
 }
-
-
