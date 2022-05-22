@@ -50,10 +50,10 @@
                     <a href="#contact" class="btn btn-yellow" id="quoteMe">Quote Me</a>
                 </div>
             </div>
-            <div class="row contactForm" id="contact">
+            <div class="row contactform" id="contact">
                 <div class="col-12 offset-md-3 col-md-6">
                     <h2>Your Details:</h2>
-                    <form onsubmit="return sendMail(this);" class="contact-form">
+                    <form onsubmit="return sendMail(this);">
                         <div class="row">
                             <label for="name" class="col-4">Name:</label>
                             <input type="text" id="name" name="name" class="col-6" required>
@@ -81,8 +81,9 @@
                             <br>
                             <textarea id="message" name="message" rows="10" cols="30" placeholder="Write your message here..." class="col-12"></textarea>
                         </div>
+                            <input type="hidden" id="selectioninform" name="selectioninform"/>
                         <div class="row">
-                            <input type="submit" class="btn btn-yellow btn-form" value="Get A Quote!">
+                            <input type="submit" class="btn btn-yellow btn-form" value="Get A Quote!" id="sendquoterequest">
                         </div>
                         <div class="col-1"></div>
                     </form>

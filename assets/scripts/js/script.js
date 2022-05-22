@@ -75,17 +75,15 @@ window.initMap = initMap;
 $(document).ready(function() {
   $("#addToItinerary").on("click", function() {
       $("#selection").append($("#activityInfo").html());
+      $("#quoteMe").on("click", function() {
+        // add selection list to hidden input on form to get quote
+        let selection = $("#selection").text();
+        $("#selectioninform").val(selection);
+      });
     });
 });
 
-// add selection list to intinerary to get quote
 
-$(document).ready(function() {
-  $("#quoteMe").on("click", function() {
-    var $selection = $("#selection").clone();
-    $("#itinerary").html($selection);
-  });
-});
 
 
 

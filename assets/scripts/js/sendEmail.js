@@ -7,13 +7,16 @@ function sendMail(contactForm) {
         "startdate": contactForm.startdate.value,
         "enddate": contactForm.enddate.value,
         "message": contactForm.message.value,
+        "selectioninform": contactForm.selectioninform.value
     }, "pO6iguNSliFMMJnWE")
     .then(
         function(response) {
             console.log("SUCCESS", response);
+            alert("Thank you! We'll be in touch soon.");
         },
         function(error) {
-            console.log("FAILED", error)
+            console.log("FAILED", error);
+            alert("Oops! Something went wrong. Please refresh and try again.");
         });
         return false;
 }
