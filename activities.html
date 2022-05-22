@@ -36,20 +36,20 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-sm-8">
+                <div class="col-sm-8 map-block">
                     <div id="mapinstructions"><p>Click the places on the map to find out more:</p></div>
                     <div id="map">map</div>
                     <h2>Activity Info:</h2>
                     <div id="activityInfo"></div>
                     <input type="button" value="Add to Itinerary" class="btn btn-yellow" id="addToItinerary">
                 </div>
-                <div class="col-sm-4 d-none d-sm-block selection-block">
+                <div class="col-12 col-sm-4 selection-block">
                     <h2>Your selection:</h2>
                     <div id="selection"></div>
                     <a href="#contact" class="btn btn-yellow" id="quoteMe">Quote Me</a>
                 </div>
             </div>
-            <div class="row contactform" id="contact">
+            <div class="row contactform">
                 <div class="col-12 offset-md-3 col-md-6">
                     <h2>Your Details:</h2>
                     <form onsubmit="return sendMail(this);">

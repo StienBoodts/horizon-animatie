@@ -68,6 +68,11 @@ p {
     margin-bottom: 5%;
 }
 
+.image-container p {
+    margin:0;
+    font-size: 10px;
+}
+
 #introduction {
     font-size: 1.3em;
     margin: 5%;
@@ -92,6 +97,10 @@ p {
 
 /* ---------------------------------------  Map */
 
+.map-block {
+    padding-bottom: 20px;
+}
+
 #mapinstructions {
     text-align: center;
     size: 1em;
@@ -107,12 +116,15 @@ p {
 
 .selection-block {
     background-color: #16B7B2;
+    padding-bottom: 20px;
 }
  
 /* ---------------------------------------  form */
 
 .contactform {
     background-color:#FDA31B;
+    padding: 20px;
+    overflow: auto;
 }
 
 input, label {
@@ -145,7 +157,6 @@ input:hover, textarea:hover {
 /* ---------------------------------------  footer */
 
 footer {
-    margin-top: 20px;
     background-color: #16B7B2;
     color: #fff;
 }
