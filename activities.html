@@ -47,10 +47,11 @@
                     <h2>Your selection:</h2>
                     <div id="selection"></div>
                     <a href="#contact" class="btn btn-yellow" id="quoteMe">Quote Me</a>
+                    <button class="btn btn-refresh" onClick="window.location.reload();" value="Start Over">Start Over</button>
                 </div>
             </div>
             <div class="row contactform">
-                <div class="col-12 offset-md-3 col-md-6">
+                <div class="col-12 offset-md-3 col-md-6" id="contact">
                     <h2>Your Details:</h2>
                     <form onsubmit="return sendMail(this);">
                         <div class="row">

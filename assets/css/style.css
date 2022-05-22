@@ -90,6 +90,17 @@ p {
     color: #black;
 }
 
+.btn-refresh {
+    background-color: #CD2244;
+    width: 33%;
+    margin-left: 33%;
+    margin-top: 10px;
+}
+
+.btn-refresh:hover {
+    background-color: #FDA31B;
+}
+
 #introcol {
     margin-top: 5%;
     margin-bottom: 5%;
